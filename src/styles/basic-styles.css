@@ -1,0 +1,493 @@
+.welcome-container {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-text {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+ 
+  .date-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .date-display {
+    text-align: center;
+  }
+  
+  .date {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .time {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+ 
+  .hobbies-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hobby-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    transition: transform 0.2s;
+  }
+  
+  .hobby-item:hover {
+    transform: translateX(10px);
+  }
+  
+  .hobby-number {
+    width: 30px;
+    height: 30px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  
+ 
+  .custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .custom-button.primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .custom-button.secondary {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .custom-button.small {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .custom-button.large {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .custom-button:hover:not(.disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .custom-button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .button-icon {
+    margin-right: 0.5rem;
+  }
+  
+ 
+  .profile-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .profile-header {
+    background: #007bff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+  
+  .profile-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  
+  .profile-content {
+    padding: 1.5rem;
+  }
+  
+  .profile-name {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-info {
+    margin-bottom: 1rem;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .info-label {
+    color: #666;
+  }
+  
+  .profile-bio {
+    color: #666;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-link {
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .social-link:hover {
+    background: #e9ecef;
+  }
+  
+ 
+  .list-display {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .list-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .sort-button {
+    padding: 0.5rem 1rem;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+
+.list-item {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .list-item:hover {
+    transform: translateX(5px);
+    background: #e9ecef;
+  }
+  
+  .custom-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .item-number {
+    width: 24px;
+    height: 24px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+  }
+  
+  .item-text {
+    flex: 1;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  .list-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    text-align: right;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+ 
+  .examples-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  .button-examples {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+ 
+  .welcome-container,
+  .date-container,
+  .hobbies-container,
+  .profile-card,
+  .list-display {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .time {
+    animation: pulse 2s infinite;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .examples-container {
+      padding: 1rem;
+    }
+  
+    .welcome-text {
+      font-size: 2rem;
+    }
+  
+    .time {
+      font-size: 1.5rem;
+    }
+  
+    .profile-card {
+      margin: 0 1rem;
+    }
+  
+    .button-examples {
+      flex-direction: column;
+    }
+  
+    .custom-button {
+      width: 100%;
+    }
+  
+    .list-controls {
+      flex-direction: column;
+    }
+  
+    .sort-button {
+      width: 100%;
+    }
+  }
+  
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .welcome-container,
+    .date-container,
+    .hobbies-container,
+    .profile-card,
+    .list-display {
+      animation: none;
+    }
+  
+    .time {
+      animation: none;
+    }
+  
+    .hobby-item:hover {
+      transform: none;
+    }
+  
+    .custom-button:hover:not(.disabled) {
+      transform: none;
+    }
+  }
+  
+ 
+  .custom-button:focus,
+  .search-input:focus,
+  .sort-button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+ 
+  @media (prefers-color-scheme: dark) {
+    .profile-card,
+    .list-display,
+    .date-container,
+    .hobbies-container {
+      background: #2a2a2a;
+      color: #fff;
+    }
+  
+    .hobby-item,
+    .list-item {
+      background: #333;
+    }
+  
+    .search-input,
+    .sort-button {
+      background: #333;
+      color: #fff;
+      border-color: #444;
+    }
+  
+    .info-item {
+      border-bottom-color: #444;
+    }
+  
+    .empty-message {
+      background: #333;
+      color: #ccc;
+    }
+  
+    .section h2 {
+      color: #fff;
+      border-bottom-color: #444;
+    }
+  
+    .social-link {
+      background: #333;
+      color: #fff;
+    }
+  
+    .social-link:hover {
+      background: #444;
+    }
+  }
+  
+ 
+  @media print {
+    .welcome-container,
+    .date-container,
+    .hobbies-container,
+    .profile-card,
+    .list-display {
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+  
+    .custom-button,
+    .sort-button {
+      display: none;
+    }
+  
+    .search-input {
+      border: none;
+      outline: none;
+    }
+  }

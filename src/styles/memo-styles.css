@@ -1,0 +1,79 @@
+
+.memo-parent, .counter-list, .heavy-calc, .todo-container, .live-time {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .memo-child {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .optimized-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .list-item {
+    padding: 10px;
+    background: #f8f9fa;
+    margin: 5px 0;
+    border-radius: 4px;
+  }
+  
+  .heavy-calc {
+    background: #f8f9fa;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .time-display {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-top: 15px;
+  }
+  
+  .static-content {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+  }

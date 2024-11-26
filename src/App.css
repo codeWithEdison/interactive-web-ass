@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+ 
+  .app-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app-header h1 {
+    text-align: center;
+    margin: 0 0 1rem 0;
   }
-}
+  
+ 
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background: #333;
+    border-radius: 8px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .main-nav a:hover {
+    background: #444;
+  }
+  
+  .main-nav a.active {
+    background: #007bff;
+  }
+  
+ 
+  .app-main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+ 
+  .section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+ 
+  .component-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+ 
+  .sub-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .sub-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  .sub-nav a:hover {
+    background: #e0e0e0;
+  }
+  
+  .sub-nav a.active {
+    background: #007bff;
+    color: white;
+  }
+  
+ 
+  .welcome-section {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+ 
+  .app-footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .main-nav {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+  
+    .main-nav a {
+      text-align: center;
+    }
+  
+    .app-main {
+      padding: 1rem;
+    }
+  
+    .section {
+      padding: 1rem;
+    }
+  
+    .component-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .section {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+ 
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+  
+ 
+  .text-center { text-align: center; }
+  .mt-2 { margin-top: 2rem; }
+  .mb-2 { margin-bottom: 2rem; }

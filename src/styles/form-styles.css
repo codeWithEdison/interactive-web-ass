@@ -1,0 +1,237 @@
+
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+ 
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+  }
+  
+  .form-group input.error {
+    border-color: #dc3545;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+ 
+  .password-input {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+ 
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .progress-step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .progress-step.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .progress-line {
+    flex: 1;
+    height: 2px;
+    background: #eee;
+    margin: 0 10px;
+  }
+  
+  .progress-step.active + .progress-line {
+    background: #007bff;
+  }
+  
+  .form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .prev-button,
+  .next-button,
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .prev-button {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .next-button,
+  .submit-button {
+    background: #007bff;
+    color: white;
+  }
+  
+  .prev-button:hover {
+    background: #5a6268;
+  }
+  
+  .next-button:hover,
+  .submit-button:hover {
+    background: #0056b3;
+  }
+  
+ 
+  .checkbox-group {
+    margin: 20px 0;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .select-all-container {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .selected-count {
+    text-align: right;
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  button.success {
+    background: #28a745;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+ 
+  .loading {
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .loading:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+ 
+  @media (max-width: 576px) {
+    .form-container {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .form-navigation {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .prev-button,
+    .next-button,
+    .submit-button {
+      width: 100%;
+    }
+  }
