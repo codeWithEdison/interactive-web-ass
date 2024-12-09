@@ -52,9 +52,9 @@ const App = () => {
                     <CustomButton text="Secondary Button" color="secondary" />
                   </div>
                   <ProfileCard 
-                    name="Divine" 
+                    name="Claire" 
                     age={22} 
-                    email="divine@gmail.com" 
+                    email="claire@gmail.com" 
                   />
                 </div>
               </div>
