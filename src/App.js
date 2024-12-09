@@ -5,7 +5,7 @@ import './App.css';
 import { WelcomeMessage, CurrentDate, HobbiesList, CustomButton, ProfileCard } from './components/BasicComponents';
 import { ToggleButton, Counter, ColorChangeDiv, FormLogger, DropdownMenu } from './components/EventComponents';
 import { LoginForm, ControlledForm, ValidationForm, MultiStepForm, CheckboxForm } from './components/FormComponents';
-import { Home, About, Contact, ProductDetails, BlogLayout, NotFound } from './components/RoutingComponents';
+import { NotFound } from './components/RoutingComponents';
 import { ParentComponent, HeavyCalculationComponent, TodoList, LiveTimeComponent } from './components/MemoComponents';
 import { 
   LecturerRegistrationForm, 
@@ -14,6 +14,7 @@ import {
   BookRegistrationForm,
   ModuleRegistrationForm 
 } from './components/RegistrationForms';
+import { RoutingDemo } from './components/RoutingComponents';
 
 const App = () => {
   return (
@@ -52,9 +53,9 @@ const App = () => {
                     <CustomButton text="Secondary Button" color="secondary" />
                   </div>
                   <ProfileCard 
-                    name="Claire" 
-                    age={22} 
-                    email="claire@gmail.com" 
+                    name="Edison"
+                    age={20} 
+                    email="edsnkvn@gmail.com" 
                   />
                 </div>
               </div>
@@ -97,7 +98,7 @@ const App = () => {
               </Routes>
             } />
 
-            
+{/*             
             <Route path="/routing-demo/*" element={
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -106,7 +107,8 @@ const App = () => {
                 <Route path="/products/:id" element={<ProductDetails />} />
                 <Route path="/blog/*" element={<BlogLayout />} />
               </Routes>
-            } />
+            } /> */}
+            <Route path="/routing-demo/*" element={<RoutingDemo />} />
 
             
             <Route path="/memo" element={

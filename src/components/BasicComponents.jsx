@@ -274,13 +274,13 @@ const UsageExample = () => {
       <div className="section">
         <h2>Profile Example</h2>
         <ProfileCard 
-          name="Claire"
-          age={28}
-          email="Claire@gmail.com"
+          name="Edison"
+          age={23}
+          email="edsnkvn@gmail.com"
           bio="Frontend Developer passionate about React"
           social={{
-            github: "https://github.com/mclaire",
-            linkedin: "https://linkedin.com/mclaire"
+            github: "https://github.com/codewithedison",
+            linkedin: "https://linkedin.com/codewithedison"
           }}
         />
       </div>
